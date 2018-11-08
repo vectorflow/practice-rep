@@ -1,0 +1,21 @@
+<!doctype html>
+	-tells the browser the file is html5.
+	-2 types of rendering: standard, quirk.
+	-if not given tags may not to be identified.
+
+<h1> <h2> tags are used by search engine. 
+
+elements - basic buiding block.
+attributes - gives additional properties to element.
+
+always include alt in the img tag - search engine optimization
+
+muted cannot be used in audio
+
+favicon - icons on the tab - iconfinder.com - 32x32
+
+box-model
+	marginleft+borderleft+paddingleft+widthofodiv+paddingright+borderright+marginright = total width
+
+Diff btwn visibility: hidden and display  : none?
+	In visibility: hidden element space is not removed but in display: none element space is removed.

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nth Child</title>
+	<style type="text/css">
+		p:first-child{
+			color: lime;
+			background-color: black;
+			padding: 5px;
+		}
+		p:last-child{
+			color: lime;
+			background-color: black;
+			padding: 5px;
+		}
+		p:nth-child(3){
+			background: red;
+		}
+		p:nth-child(2){
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>This text is first.</p>
+		<p>This text is second.</p>
+		<p>This text is third.</p>
+	</div>
+	<div>
+		<h2>This text is not selected: its not a p</h2>
+		<p>This text is first.</p>
+		<p>This text is second.</p>
+		<p>This text is third.</p>
+		<p>This text is forth.</p>
+	</div>
+</body>
+</html>

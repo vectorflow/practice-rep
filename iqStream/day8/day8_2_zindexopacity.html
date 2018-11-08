@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Z-Index & Opacity</title>
+	<style type="text/css">
+		.one{
+			position: absolute;
+			/*position: relative;*/
+			width: 200px;
+			height: 200px;
+			background-color: #0375b4;
+			left: 5px;
+			top: 5px;
+			opacity: 0.8;
+			z-index: 999;
+		}
+		.two{
+			position: absolute;
+			/*position: relative;*/
+			width: 200px;
+			height: 200px;
+			background-color: #007849;
+			left: 25px;
+			top: 25px;
+			opacity: 0.5;
+		}
+		.three{
+			position: absolute;
+			/*position: relative;*/
+			width: 200px;
+			height: 200px;
+			background-color: #ffce00;
+			left: 45px;
+			top: 45px;
+			opacity: 0.5;
+		}
+	</style>
+</head>
+<body>
+	<div class="one"></div>
+	<div class="two"></div>
+	<div class="three"></div>
+</body>
+</html>

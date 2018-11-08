@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions - JavaScript - Basics</title>
+</head>
+<body>
+	<input type="text" id="one">
+	<input type="text" id="two">
+	<p id="result"></p><br>
+	<input type="button" value="ADD" onclick="add()">
+	<input type="button" value="SUB" onclick="sub()">
+	<input type="button" value="MULTI" onclick="multi()">
+	<input type="button" value="DIV" onclick="div()">
+
+	<script type="text/javascript">
+		function add(){
+			var a=document.getElementById("one").value;
+			var b=document.getElementById("two").value;
+			var x=parseInt(a);
+			var y=parseInt(b);
+			var c=x+y;
+			alert(c);
+		}
+		function sub(){
+			var a=document.getElementById("one").value;
+			var b=document.getElementById("two").value;
+			var c=a-b;
+			alert(c);
+		}
+		function multi(){
+			var a=document.getElementById("one").value;
+			var b=document.getElementById("two").value;
+			var c=a*b;
+			alert(c);
+		}
+		function div(){
+			var a=document.getElementById("one").value;
+			var b=document.getElementById("two").value;
+			var c=a/b;
+			alert(c);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas - Line</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="200px" height="100px" style="border: 1px solid blue;">Your browser does not support HTML5 canvas tag.</canvas>
+
+	<script type="text/javascript">
+		var c=document.getElementById("myCanvas");
+		var ctx=c.getContext("2d");
+		ctx.moveTo(0,0);
+		ctx.lineTo(200,100);
+		ctx.stroke();
+	</script>
+</body>
+</html>
