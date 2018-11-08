@@ -1,0 +1,66 @@
+<style>
+	#logo{
+		width:200px;
+		float:left;
+	}
+	#title{
+		padding:0;
+		width: 650px;
+		float: left;
+		text-align: center;
+	}
+	#inj{
+		float: left;
+		width: auto;
+	}
+	#header{
+		width: 800px;
+		height: 100px;
+		margin:auto;
+		border: 5px solid black;
+	}
+	h1{
+		padding: 0;
+		font-size: 60px;
+		color:red;
+		margin:0;
+		width: 650px;
+	}
+	#content{
+		width: 800px;
+		margin:auto;
+		border:5px solid black;
+		height:auto;
+		background-color: lightgrey;
+	}
+	#images{
+		float:left;
+		margin:20px;
+	}
+	#lorem{
+		margin:10px;
+		text-align: justify;
+	}
+	#footer{
+		width: 810px;
+		border: 5px solid black;
+		text-align: center;
+		margin:auto;
+		box-sizing: border-box;
+		padding: 20px;
+		border-top: none;
+	}
+	#navbar{
+		width:800px;
+		height:43px;
+		margin:auto;
+		background-color:grey;
+		border-left: 5px solid black;
+		border-right: 5px solid black;
+	}
+	.nav{
+		color:white;
+		float: right;
+		padding:10px;
+		border:2px solid white;
+	}

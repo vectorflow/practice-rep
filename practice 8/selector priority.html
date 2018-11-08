@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>selector priority</title>
+	<style
+	>
+		.one{
+			background-color: red;
+		}
+		.two{
+			background-color: blue;
+		}
+		/*#three{
+			background-color: orange;
+		}*/
+		div{
+			background-color:black;
+		}
+	</style>
+</head>
+<body>
+	<div class="one two" id="three" style="width:200px; height: 200px;/*background-color: green*/"> HeLLo</div>
+</body>
+</html>

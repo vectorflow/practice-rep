@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>z-inex and opacity</title>
+	<style type="text/css">
+		.one{
+			position: absolute;
+			/*position:relative1;*/
+			width:200px;
+			height: 200px;
+			background-color:blue;
+			left:5px;
+			top:5px;
+			opacity:0.8;
+			z-index: 999; 
+		}
+		.two{
+			position: absolute;
+			/*position:relative1;*/
+			width:200px;
+			height: 200px;
+			background-color:yellow;
+			left:25px;
+			top:25px;
+			opacity:0.5;
+		}
+		.three{
+			position: absolute;
+			/*position:relative1;*/
+			width:200px;
+			height: 200px;
+			background-color:green;
+			left:45px;
+			top:45px;
+			opacity:0.5;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="one"></div>
+	<div class="two"></div>
+	<div class="three"></div>
+</body>
+</html>

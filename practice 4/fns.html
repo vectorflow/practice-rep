@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fns</title>
+</head>
+<body>
+	<input type="text" id="one">
+	<input type="text" id="two">
+	<p id="result"></p><br/>
+	<input type="button" value="ADD" onclick="add()">
+	<input type="button" value="SUB" onclick="sub()">
+	<input type="button" value="MULTI" onclick="mul()">
+	<input type="button" value="div" onclick="div()">
+	<input type="button" value="MOD" onclick="mod()">
+	<script type="text/javascript">
+		function add(){
+			var a=document.getElementById("one").value;
+			var b=document.getElementById("two").value;
+			var x=parseInt(a);
+			var y=parseInt(b);
+			var c=x+y;
+			document.getElementById("result").innerHTML=c;
+		}
+		function sub(){
+			var a=document.getElementById("one").value;
+			var b=document.getElementById("two").value;
+			var c=a-b;
+			document.getElementById("result").innerHTML=c;
+		}
+		function mul(){
+			var a=document.getElementById("one").value;
+			var b=document.getElementById("two").value;
+			var c=a*b;
+			document.getElementById("result").innerHTML=c;
+		}
+		function div(){
+			var a=document.getElementById("one").value;
+			var b=document.getElementById("two").value;
+			var c=a/b;
+			document.getElementById("result").innerHTML=c;
+		}
+		function mod(){
+			var a=document.getElementById("one").value;
+			var b=document.getElementById("two").value;
+			var c=a%b;
+			document.getElementById("result").innerHTML=c;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>storages</title>
+</head>
+<body>
+	<label>Name:</label><input type="text" id="one" name="storageone">
+	<button onclick="storex()">Storage</button>
+	<script type="text/javascript">
+		function storex(){
+			var nm=document.getElementById("one").value;
+			localStorage.setItem("lc",nm);
+			sessionStorage.setItem("sc",nm);
+			window.location="storagetwo.html";
+		}
+	</script>
+</body>
+</html>
