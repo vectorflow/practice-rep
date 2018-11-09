@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style type="text/css">
+        .progress{
+            width: 75%;
+            margin-top: 5px;
+            margin-left: 5px;
+
+        }
+        .col-md-6 .row{
+          margin-left: 0px;
+          margin-right:0px;
+        }
+        .jumbotron{
+          margin-bottom: 0px;
+        }
+        #Skill{
+          margin:30px 0px;
+        }
+        #About{
+          color:white;
+        }
+        #dp{
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          float: right;
+          margin-right:40px;
+        }
+    </style>
+    <title>Sample Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Name</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 h-50" src="sp_images/1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 h-50" src="sp_images/2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 h-50" src="sp_images/3.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="row" id="Skill">
+      <div class="col-md-6">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">X<sup>th</sup></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">XII<sup>th</sup></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Graduation</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed libero euismod, cursus urna sit amet, interdum odio. Proin ullamcorper vulputate augue. Proin sit amet odio iaculis, porta libero in, sagittis elit. Curabitur vitae consectetur augue, eu rutrum tellus. Nulla imperdiet blandit feugiat. Morbi varius tortor in sem molestie, a feugiat lacus molestie. </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed libero euismod, cursus urna sit amet, interdum odio. Proin ullamcorper vulputate augue. Proin sit amet odio iaculis, porta libero in, sagittis elit. Curabitur vitae consectetur augue, eu rutrum tellus. Nulla imperdiet blandit feugiat. Morbi varius tortor in sem molestie, a feugiat lacus molestie. </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed libero euismod, cursus urna sit amet, interdum odio. Proin ullamcorper vulputate augue. Proin sit amet odio iaculis, porta libero in, sagittis elit. Curabitur vitae consectetur augue, eu rutrum tellus. Nulla imperdiet blandit feugiat. Morbi varius tortor in sem molestie, a feugiat lacus molestie. </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3>Skills</h3>
+        <div class="row">
+          <label for="S1">Skill 1</label>
+          <div class="progress">
+            <div id="S1" class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="S2">Skill 2</label>
+          <div class="progress">
+            <div id="S2" class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="S3">Skill 3</label>
+          <div class="progress">
+            <div id="S3" class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="S4">Skill 4</label>
+          <div class="progress">
+            <div id="S4" class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid bg-dark">
+      <div id="dp"><img src="sp_images/dp.jpg" width="100px" height="100px" style="border-radius: 50%"></div>
+      <div class="container" id="About">
+        <h2 class="display-4">About Me</h2>
+        <p class="lead">Curabitur mattis laoreet ex et rhoncus. Vestibulum mollis orci eros, vel commodo nisl suscipit id. Pellentesque at aliquet sapien, ac fermentum tortor. Praesent ac fringilla velit. Vivamus pharetra consequat tellus, ac pulvinar enim iaculis euismod. Integer in urna ut lorem accumsan congue in cursus turpis. Pellentesque nec nisl in velit sodales varius sit amet a nisi. Nulla rhoncus, nibh vel interdum mattis, lorem sem rutrum tortor, ac tristique justo augue ac nisi. Nulla tellus eros, tristique in facilisis non, venenatis sed ante. Donec volutpat tortor et bibendum dictum. Donec pretium eros sagittis nibh aliquet, feugiat blandit nibh lacinia. Cras at quam molestie nunc cursus egestas.</p>
+      </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid" style="padding: 32px;">
+      <div class="container">
+        <h2 class="display-4">Contact</h2>
+        <hr/>
+        <div class="row">
+            <div class="col">
+              <pre>Address Line 1,
+        Line 2,
+        Line 3.</pre>
+            </div>
+            <div class="col">
+              <form>
+                  <div class="form-group row">
+                    <label for="inputname" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputname" placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Message</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="justify-content-end">
+                    <button type="submit" class="btn btn-primary float-right ">Submit</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
