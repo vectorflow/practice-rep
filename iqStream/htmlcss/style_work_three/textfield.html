@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Static Web page task-1 | Mobinius</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" type = "text/css" href = "css/reset.css"/>
+  <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+<style>
+#username{
+    padding-left: 20px;
+}
+#username-label {
+    position: relative;
+}
+#username-label:before {
+    color: #666;
+    content:"\f007";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+#passcode{
+  /*padding-left: 20px;*/
+}
+#passcode-label {
+  position:relative;
+}
+#passcode-label:before {
+  color: #666;
+  content:"\f007";
+  font-family: FontAwesome;
+  position:relative;
+  top: 2px;
+  left: 5px;
+}
+input[type="password"]{
+    width:90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+</style>
+<div class="container">
+  <div>
+  <label id="username-label">
+      <input type="text" id="username" placeholder="Username here" />
+  </label>
+
+  <label id="passcode-label">
+      <input type="password" id="passcode" placeholder="password here"/>
+  </label>
+</div>
+ <div class="clearfix"></div>
+</div>
+</body>
+</html>

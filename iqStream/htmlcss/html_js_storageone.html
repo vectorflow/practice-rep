@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sorageone</title>
+</head>
+<body>
+<lebel>Name:</lebel><input type="text" id="one" name="storageone">
+<button onclick="storageEx()">Storage</button>
+<script>
+	function storageEx(){
+		var nm=document.getElementById("one").value;
+        //alert(nm);
+		localStorage.setItem("lc", nm);
+		sessionStorage.setItem("sc", nm);
+		window.location="html_js_storagetwo.html";
+	}
+</script> 
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>media query</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<style>
+  @media all  and (min-width:200px) and(max-width:400px){
+    .one{
+      background-color:RED;
+    }
+  }
+  @media all and (min-width:401px) and (max-width:600px) {
+    .two{
+      background-color:BLUE;
+    }
+  }
+@media all and (min-width:601px) and (max-width:700px) {
+    .three{
+      background-color:GREEN;
+    }
+  }
+</style>
+<div class="one two three">
+  Helllooooooooooo ......
+</div>
+</body>
+</html>

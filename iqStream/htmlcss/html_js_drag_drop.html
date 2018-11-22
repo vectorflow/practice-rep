@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div1 {
+    width:250px;
+    height:200px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+</style>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<p>Drag the IT JOB TRAINERS image into the rectangle:</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="images/logo.jpg" draggable="true" ondragstart="drag(event)" width="250" height="200">
+
+<table border="1">
+<tr><th>Event</th><th>On Event Handler</th><th>Description</th></tr>
+<tr><td>drag</td><td>ondrag</td><td>Fired when an element or text selection is being dragged.</td></tr>
+<tr><td>dragend</td><td>ondragend</td><td>Fired when a drag operation is being ended (for example, by releasing a mouse button or hitting the escape key). (See Finishing a Drag.)</td></tr>
+<tr><td>dragenter</td><td>ondragenter</td><td>Fired when a dragged element or text selection enters a valid drop target. (See Specifying Drop Targets.).</td></tr>
+<tr><td>dragexit</td><td>ondragexit</td><td>Fired when an element is no longer the drag operation's immediate selection target.</td></tr>
+<tr><td>dragleave</td><td>ondragleave</td><td>Fired when a dragged element or text selection leaves a valid drop target.</td></tr>
+<tr><td>dragover</td><td>ondragover</td><td>Fired when an element or text selection is being dragged over a valid drop target (every few hundred milliseconds).</td></tr>
+<tr><td>dragstart</td><td>ondragstart</td><td>Fired when the user starts dragging an element or text selection. (See Starting a Drag Operation.)</td></tr>
+<tr><td>drop</td><td>ondrop</td><td>Fired when an element or text selection is dropped on a valid drop target. (See Performing a Drop.)</td></tr>
+</table>
+</body>
+</html>

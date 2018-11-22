@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+  .mycontainer{
+    width=200px;
+  }
+  input[type=text],[type=password], select {
+      /*width:90%;*/
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+  input[type=submit] {
+      /*width:90%;*/
+      background-color: #97c757;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 5px 2px 2px #97c757;
+  }
+
+  </style>
+
+<p>HTML element generation from JavaScript</p>
+<div class="mycontainer">
+<form name="myForm">
+</form>
+</div>
+<button onclick="myLogin()">Try it</button>
+
+<script>
+function myLogin() {
+    var br = document.createElement("br");
+    var input = document.createElement("input");
+    input.type = "text";
+    //input.className = "text-one";
+    document.myForm.appendChild(input);
+    document.myForm.appendChild(br);
+
+    var pass = document.createElement("input");
+    pass.type = "password";
+    //pass.className = "css-class-name";
+    document.myForm.appendChild(pass);
+
+    var btn = document.createElement("input");
+    btn.type="submit";
+    //btn.className = "css-class-name";
+    btn.value="Login";
+    document.myForm.appendChild(btn);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Static Web page task-1 | Mobinius</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" type = "text/css" href = "css/reset.css"/>
+  <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel= "stylesheet" type = "text/css" href = "css/weather-icons.min.css"/>
+</head>
+<body>
+<style>
+#username{
+    padding-left: 20px;
+}
+#username-label {
+    position: relative;
+}
+#username-label:before {
+    color: #666;
+    content:"\f007";
+    font-family:FontAwesome;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+#passcode{
+  padding-left: 20px;
+}
+#passcode-label {
+    position: relative;
+}
+#passcode-label:before {
+    color: #666;
+    content:"\f007";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+
+input[type="password"]{
+    width:85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.font-one{
+  font-size:18px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 18px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom:1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color:#7E6688;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 24px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.img-circle{
+  width: 120px;
+  height: 120px;
+  -moz-border-radius: 60px;
+  -webkit-border-radius:60px;
+  border-radius:60px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.prof-out{
+width:100%;
+border-style: solid;
+border-top-width:2px;
+border-top-color:#c8c8c8;
+height:60px;
+}
+.prof-one{
+  width:33.33%;
+  height:100%;
+  padding-top:10px;
+  border-style: solid;
+  border-right-width:2px;
+  border-right-color:#c8c8c8;
+  display:inline-block;
+  float: left;
+}
+.prof-two{
+  width:33.33%;
+  height:100%;
+  padding-top:10px;
+  border-style: solid;
+  border-right-width:2px;
+  border-right-color:#c8c8c8;
+  display:inline-block;
+  float: left;
+}
+.prof-three{
+  width:33.33%;
+  height:100%;
+  padding-top:10px;
+  display:inline-block;
+  float: left;
+}
+.music-text{
+  text-align:left;
+  padding:10px;
+}
+.right-icons{
+  float:right;
+}
+.temp-20{
+  width:100%;
+  float:left;
+  font-size:40px;
+  font-weight: bold;
+  color:#ffffff;
+  text-align: left;
+  padding-left:10px;
+  padding-top:5px;
+}
+.temp-de{
+  font-size:10px;
+  padding-top:-50px;
+}
+.temp-lendon{
+  font-size:16px;
+  padding-top:100px;
+  text-align: right;
+  padding-right:20px;
+}
+.time-diff{
+  text-align:left;
+}
+.temp1{
+  width:15px;
+  border-bottom-width:1px;
+  border-bottom-color:#c8c8c8;
+  border-bottom-style:solid;
+}
+</style>
+<div class="container">
+  <!--sign in -->
+ <div class="div-sign">
+ <div class="cont-heading-one div-inner-one">
+   <div class="content color-white">
+    <p class="font-one">Sign Up</p>
+  </div>
+ </div>
+ <div class="div-two">
+   <div>
+   <label id="username-label">
+   <input type="text" id="username" placeholder="Enter a Username">
+ </label>
+ </div>
+ <div>
+ <label id="passcode-label">
+   <input type="password" id="passcode" placeholder="Chose a Password">
+ </label>
+   <input type="submit" value="Sign Up Now">
+ </div>
+ </div>
+ </div>
+ <!--music-->
+ <div class="div-music">
+   <div class="cont-heading-one div-inner-music">
+     <div class="content-music color-white">
+     <p class="font-one">Music Player</p>
+     <p>Purple Haze</p>
+   </div>
+ </div>
+   <div class="div-inner-music-icon">
+   <div class="content-music color-white">
+     <i class="fa fa-2x fa-backward"aria-hidden="true"></i>
+     <i class="fa fa-2x fa-pause-circle-o color-white" aria-hidden="true"></i>
+     <i class="fa fa-2x fa-forward color-white" aria-hidden="true"></i>
+    </div>
+   </div>
+   <div class="div-two">
+   <img style="width:95%" src="images/music_line.PNG" alt="music">
+ </div>
+ </div>
+ <!--settings -->
+ <div class="div-setting">
+   <div class="cont-heading-one div-inner-one">
+     <div class="content color-white">
+     <p class="font-one">Settings</p>
+    </div>
+   </div>
+  <div class="music-text">
+   Add/ Change Email Address
+   <hr></hr>
+   Menu Sounds
+   <label class="switch" style="float:right;">
+  <input type="checkbox">
+  <span class="slider round"></span>
+  </label>
+   <hr></hr>
+   Restrictions
+   <label class="switch" style="float:right;">
+     <input type="checkbox" checked>
+     <span class="slider round"></span>
+   </label>
+   <hr></hr>
+   FAQ
+ </div>
+ </div>
+ <div class="div-calender">
+   <div class="cont-heading-one div-inner-one">
+     <div class="content color-white">
+     Calender
+    </div>
+   </div>
+   <div style="height:245px">
+   Jquery Calender
+ </div>
+ </div>
+ <div class="div-profile">
+   <div class="cont-heading-one div-inner-one">
+     <div class="content color-white">
+     User Profile
+    </div>
+   </div>
+   <img class="img-circle" src="images/bengal-tiger.jpg" src="tiger">
+   <p class="color-pnk">Bob Parker</p>
+   <p class="color-pnk-down">Hey You play more games</p>
+   <div class="prof-out">
+     <div class="prof-one">
+       <i class="fa fa-heart color-red" aria-hidden="true"></i><br/>
+       140
+     </div>
+     <div class="prof-two">
+       <i class="fa fa-user color-ash" aria-hidden="true"></i>
+       <i class="fa fa-user color-ash" aria-hidden="true"></i><br/>
+       156
+     </div>
+     <div class="prof-three">
+       <i class="fa fa-eye color-ash" aria-hidden="true"></i><br/>
+       11,990
+     </div>
+   </div>
+ </div>
+ <div class="div-social">
+   <div class="cont-heading-one div-inner-one">
+     <div class="content color-white">
+     Social
+    </div>
+   </div>
+   <button class="btn-fb"><i class="fa fa-2x fa-facebook color-white" aria-hidden="true"></i></button>
+   <button class="btn-tw"><i class="fa fa-2x fa-twitter color-white" aria-hidden="true"></i></button>
+   <button class="btn-st"><i class="fa fa-2x fa-dribbble color-white" aria-hidden="true"></i></button>
+   <button class="btn-dr"><i class="fa fa-2x fa-stumbleupon color-white" aria-hidden="true"></i></button>
+ </div>
+ <div class="div-temp">
+   <div class="div-inner-temp">
+     <div class="temp-20">
+       20<sup class="temp-de">0</sup>
+     </div>
+     <div class="color-white temp-lendon">
+     Liverpool UK
+     <i class="fa fa-user color-ash" aria-hidden="true"></i>
+   </div>
+   </div>
+   <div class="time-diff">
+   <div class="temp1">
+   Tomorrow 23<sup>0</sup><i class="fa fa-user color-ash" aria-hidden="true"></i>
+  </div>
+  <div class="temp1">
+   Friday 26<i class="wi wi-day-cloudy"></i>
+ </div>
+  <div class="temp1">
+   Saturday 19<i class="fa fa-user color-ash" aria-hidden="true"></i>
+ </div>
+ </div>
+ </div>
+ <div class="clearfix"></div>
+</div>
+</body>
+</html>

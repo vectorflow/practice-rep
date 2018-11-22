@@ -1,0 +1,34 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Demo: HTML5 video controls with JavaScript</title>
+<style>
+	div.container { background-color: #ddd; margin: 0 auto 20px; padding: 1px 1px 0; width: 360px; }
+    ul, li { margin: 0; padding: 0; }
+	ul { list-style: none; overflow: hidden; padding: 10px 0; width: 100%; }
+	li { float: left; }
+	li.play_pause { padding-left: 10px; width: 40px; }
+	li.time { text-align: center; width: 160px; }
+	li.volume { padding-right: 10px; width: 100px; }
+	.control { color: red; cursor: pointer; }
+</style>
+<script src="js/video.js" type="text/javascript"></script>
+</head>
+<body>
+	<!--https://www.broken-links.com/2009/10/06/building-html5-video-controls-with-javascript/ -->
+<p class="back"><a href="building-html5-video-controls-with-javascript/">Back to blog</a></p>
+	<div class="container">
+	<video id="video" autobuffer height="240" poster="images/dancedance.gif" width="360">
+   	<source src="media/dance.mp4" type="video/mp4">
+		<source src="media/dance.webm" type="video/webm">
+		<source src="media/dance.ogv" type="video/ogg">
+	</video>
+	<ul class="controls">
+	<li class="play_pause"><p class="control" id="play">Play</p></li>
+	<li class="time"><p><span id="timer">1</span>' of <span id="duration">0</span>'</p></li>
+	<li class="volume"><p>Vol: <span class="control" id="v-dn" title="Volume down">-</span> / <span class="control" id="v-up" title="Volume up">+</span> <span id="volume">10</span></p></li>
+	</ul>
+	</div>
+</body>
+</html>

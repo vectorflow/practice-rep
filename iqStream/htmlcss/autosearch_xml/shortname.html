@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>data from xml</title>
+</head>
+<body>
+  https://forum.jquery.com/topic/jquery-autocomplete-with-xml-datasource
+<script type="text/javascript">
+    $(function() {
+        $.ajax({
+            //url: "http://server/websites/sales/CompanyShortNames.xml",
+            url:"shortname.xml",
+            dataType:"xml",
+            success:function( xmlResponse ) {
+                var data = $( "row", xmlResponse ).map(function() {
+                    return {
+                        //value: $( "ASS_CPNYSHORTNAME", this ).text()
+                        value: $(this).attr('ASS_CPNYSHORTNAME');
+                    };
+                }).get();
+                $( "#Companys" ).autocomplete({
+                    source: data,
+                    minLength: 0
+                });
+            },
+   error: function(jqXHR, textStatus, errorThrown) { alert(textStatus); alert(errorThrown); },
+        });
+    });
+    </script>
+<div class="ui-widget">
+ <label for="Companys">Tags: </label>
+ <input id="Companys">
+</div>
+</body>
+</html>

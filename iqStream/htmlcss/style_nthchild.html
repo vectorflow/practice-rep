@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>nth child</title>
+</head>
+<body>
+<style>
+p:first-child {
+  color: lime;
+  background-color: black;
+  padding: 5px;
+}
+p:last-child {
+  color: lime;
+  background-color: black;
+  padding: 5px;
+}
+p:nth-child(3) {
+    background: red;
+}
+p:nth-child(2) {
+    background: yellow;
+}
+</style>
+<div>
+  <!-- nth child with <p>works only inside div -->
+  <p>This text is first</p>
+  <p>This text is second.</p>
+  <p>This text is third.</p>
+
+</div>
+<div>
+  <h2>This text isn't selected: it's not a `p`.</h2>
+  <p>This text is first.</p>
+  <p>This text is second.</p>
+  <p>This text is third.</p>
+  <p>This text is forth.</p>
+</div>
+</body>
+</html>

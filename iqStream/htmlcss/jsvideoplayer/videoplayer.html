@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div style="text-align:center">
+  <button onclick="playPause()">Play/Pause</button>
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <button title='increase volume' onclick='changeVolume("up");'>Increase volume</button>
+  <button title='decrease volume' onclick='changeVolume("down");'>Decrease volume</button>
+  <button title='mute' onclick='muteVolume();'>Mute</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="media/dance.mp4" type="video/mp4">
+    <source src="media/dance.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+</div>
+<script>
+var myVideo = document.getElementById("video1");
+function playPause() {
+    if (myVideo.paused)
+        myVideo.play();
+    else
+        myVideo.pause();
+}
+function makeBig() {
+    myVideo.width = 560;
+}
+function makeSmall() {
+    myVideo.width = 320;
+}
+function makeNormal() {
+    myVideo.width = 420;
+}
+function muteVolume(){
+  //myVideo.muted = "muted";
+  //toggling the mute
+  myVideo.muted = !myVideo.muted;
+}
+function unmuteVolume(){
+  myVideo.muted = "false";
+}
+function changeVolume(direction) {
+  if (direction == "up") {
+    // if not fully cranked yet, increase volume
+    if (volume < 0.9) {
+      volume = volume + 0.1;
+    }
+  }
+  else if (direction == "down") {
+    // if not muted, decrease volume
+    if (volume > 0.1) {
+    volume = volume - 0.1;
+    }
+  }
+}
+</script>
+<p>Dance <a href="https://itjobtrainers.com/" target="_blank">IT JOB TRAINERS</a>.</p>
+<p>(IVQ)Make video controller using jquery</p>
+<p>(IVQ)Make video controller using JavaScript</p>
+</body>
+</html>
